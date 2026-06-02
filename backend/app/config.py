@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     gemini_image_model: str = "gemini-2.5-flash-image"
     storage_dir: str = "./app/storage"
     max_upload_mb: int = 15
-    cors_origins: str = "http://localhost:3000"
+    cors_origins: str = "http://localhost:3000,https://petme-moji-api.onrender.com,capacitor://localhost,http://localhost"
 
     @property
     def storage_path(self) -> Path:
