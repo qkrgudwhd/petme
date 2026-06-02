@@ -1,0 +1,37 @@
+# env
+.env
+.env.local
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+.next/
+out/
+
+# app storage
+backend/app/storage/uploads/*
+backend/app/storage/outputs/*
+backend/app/storage/secrets.bin
+backend/app/storage/daily_usage.json
+backend/app/storage/monthly_usage.json
+!backend/app/storage/uploads/.gitkeep
+!backend/app/storage/outputs/.gitkeep
+
+# build artifacts
+PetMe-Moji-source.zip
+*.zip
+android/
+
+# capacitor 산출물 (사용자가 빌드)
+frontend/out/
+frontend/android/
+frontend/ios/
+
+# os
+.DS_Store
+Thumbs.db

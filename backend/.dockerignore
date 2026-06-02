@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+app/storage/uploads/*
+app/storage/outputs/*
+app/storage/secrets.bin
+!app/storage/uploads/.gitkeep
+!app/storage/outputs/.gitkeep

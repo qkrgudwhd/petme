@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12
+pydantic>=2.11
+pydantic-settings>=2.6
+Pillow>=12.1,<13.0
+rembg>=2.0.75
+onnxruntime
+google-genai>=1.0,<3.0
+python-dotenv>=1.0
+cryptography>=42.0

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { background: #fafafa; }
+
+/* ─────────────────────────────────────────────────────
+   진행 중 버튼 그라데이션 애니메이션
+   ───────────────────────────────────────────────────── */
+@keyframes gradient-flow {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+@keyframes gradient-stripes {
+  0%   { background-position: 0 0; }
+  100% { background-position: 32px 0; }
+}
+
+/* 분홍/주황 흐르는 그라데이션 — 메인 액션용 */
+.btn-working {
+  background: linear-gradient(90deg,
+    #ec4899, #f472b6, #fbbf24, #fb923c, #ec4899);
+  background-size: 300% 100%;
+  animation: gradient-flow 1.4s ease infinite;
+  color: white !important;
+  border-color: transparent !important;
+  cursor: progress !important;
+  position: relative;
+  overflow: hidden;
+}
+.btn-working::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: linear-gradient(135deg,
+    rgba(255,255,255,0.15) 25%, transparent 25%,
+    transparent 50%, rgba(255,255,255,0.15) 50%,
+    rgba(255,255,255,0.15) 75%, transparent 75%);
+  background-size: 32px 32px;
+  animation: gradient-stripes 0.8s linear infinite;
+  pointer-events: none;
+}
+
+/* 보조 액션용 (파란 톤) */
+.btn-working-blue {
+  background: linear-gradient(90deg,
+    #38bdf8, #818cf8, #a78bfa, #38bdf8);
+  background-size: 300% 100%;
+  animation: gradient-flow 1.4s ease infinite;
+  color: white !important;
+  border-color: transparent !important;
+  cursor: progress !important;
+}
+
+/* 작은 인라인용 (re-generate 등) */
+.btn-working-mini {
+  background: linear-gradient(90deg, #ec4899, #fbbf24, #ec4899);
+  background-size: 200% 100%;
+  animation: gradient-flow 1s linear infinite;
+  color: white !important;
+}

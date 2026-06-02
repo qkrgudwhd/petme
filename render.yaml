@@ -1,0 +1,19 @@
+# Render Blueprint — Deploy 버튼 한 번으로 백엔드 배포
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: petme-moji-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore  # 한국 사용자에게 가장 가까운 무료 리전
+    healthCheckPath: /api/health
+    envVars:
+      - key: CORS_ORIGINS
+        value: "https://your-app-domain.com,capacitor://localhost,http://localhost"
+      - key: MAX_UPLOAD_MB
+        value: "10"
+      # GEMINI_API_KEY는 BYOK 모델이라 서버에 저장 X
+      # (사용자가 앱에서 입력하면 백엔드가 받아 가공해 호출하거나, 클라이언트가 직접 호출)
+    autoDeploy: true
