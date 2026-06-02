@@ -1,7 +1,7 @@
 # 개인정보 처리방침 (Privacy Policy)
 
 **서비스명**: PetMe-Moji
-**개발자**: 박형종 (PARK HYEUNH JONG)
+**개발자**: 박형종 (PARK HYEUNG JONG)
 **주소**: 경상남도 김해시 주촌면 선지로 85 (50966)
 **문의**: phjcom3@gmail.com
 **GitHub**: https://github.com/qkrgudwhd/petme
