@@ -2,7 +2,7 @@
 
 **서비스명**: PetMe-Moji
 **개발자명**: Auto365Blog (운영자: 박형종, PARK HYUNGJONG)
-**주소**: 경상남도 김해시 주촌면 선지로 85 (우편번호 50966)
+**주소**: 경상남도 김해시 주촌면 선지로 85, 105동 2103호 (우편번호 50966)
 **전화**: 010-4554-9110
 **문의 이메일**: phjcom3@gmail.com
 **GitHub**: https://github.com/qkrgudwhd/petme
@@ -127,7 +127,7 @@ PetMe-Moji(이하 "본 앱")는 사용자의 개인정보를 소중히 다루며
 - **운영자**: 박형종 (PARK HYUNGJONG)
 - **이메일**: phjcom3@gmail.com
 - **전화**: 010-4554-9110
-- **주소**: 경상남도 김해시 주촌면 선지로 85 (우편번호 50966)
+- **주소**: 경상남도 김해시 주촌면 선지로 85, 105동 2103호 (우편번호 50966)
 - **GitHub Issues**: https://github.com/qkrgudwhd/petme/issues
 
 답변까지 영업일 기준 **3일** 이내 처리합니다.
